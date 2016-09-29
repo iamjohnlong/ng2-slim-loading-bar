@@ -16,7 +16,7 @@ import {isPresent} from './slim-loading-bar.utils';
     template: `
 <div class="slim-loading-bar">
     <div class="slim-loading-bar-progress" [style.width]="progress" [style.backgroundColor]="color" [style.color]="color"
-        [style.height]="height" [style.opacity]="show ? '1' : '0'"></div>
+        [style.height]="height" [style.display]="show ? 'block' : 'none'"></div>
 </div>`
 })
 export class SlimLoadingBarComponent implements OnInit {
